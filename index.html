@@ -11,7 +11,7 @@
       }
       #leftcontainer {
       width: 270px;
-      height: 646px;
+      height: 691px;
       vertical-align: top;
       border: 2px solid black;
       display: inline-block;
@@ -110,6 +110,7 @@
     <legend>Flight 1</legend>
   	<input type="radio" name="flight1option" onclick="flight13();">3
   	<input type="radio" name="flight1option" onclick="flight14();">4
+    <input type="radio" name="flight1option" onclick="flight1b();">Both
   	<input type="radio" name="flight1option" onclick="flight1ilt();">ILT
     <div id="flight1colorkey"></div>
   </fieldset>
@@ -119,6 +120,7 @@
     <legend>Flight 2</legend>
   	<input type="radio" name="flight2option" onclick="flight23();">3
   	<input type="radio" name="flight2option" onclick="flight24();">4
+    <input type="radio" name="flight2option" onclick="flight2b();">Both
   	<input type="radio" name="flight2option" onclick="flight2ilt();">ILT
     <div id="flight2colorkey"></div>
     </fieldset>
@@ -128,6 +130,7 @@
     <legend>Flight 3</legend>
   	<input type="radio" name="flight3option" onclick="flight33();">3
   	<input type="radio" name="flight3option" onclick="flight34();">4
+    <input type="radio" name="flight3option" onclick="flight3b();">Both
   	<input type="radio" name="flight3option" onclick="flight3ilt();">ILT
    <div id="flight3colorkey"></div>
    </fieldset>
@@ -137,6 +140,7 @@
     <legend>Flight 4</legend>
   	<input type="radio" name="flight4option" onclick="flight43();">3
   	<input type="radio" name="flight4option" onclick="flight44();">4
+    <input type="radio" name="flight4option" onclick="flight4b();">Both
   	<input type="radio" name="flight4option" onclick="flight4ilt();">ILT
    <div id="flight4colorkey"></div>
    </fieldset>
@@ -146,6 +150,7 @@
     <legend>Flight 5</legend>
   	<input type="radio" name="flight5option" onclick="flight53();">3
   	<input type="radio" name="flight5option" onclick="flight54();">4
+    <input type="radio" name="flight5option" onclick="flight5b();">Both
   	<input type="radio" name="flight5option" onclick="flight5ilt();">ILT
    <div id="flight5colorkey"></div>
    </fieldset>
@@ -163,6 +168,7 @@
     <legend>Flight 7</legend>
   	<input type="radio" name="flight7option" onclick="flight73();">3
   	<input type="radio" name="flight7option" onclick="flight74();">4
+    <input type="radio" name="flight7option" onclick="flight7b();">Both
   	<input type="radio" name="flight7option" onclick="flight7ilt();">ILT
    <div id="flight7colorkey"></div>
    </fieldset>
@@ -172,6 +178,7 @@
     <legend>Flight 8</legend>
   	<input type="radio" name="flight8option" onclick="flight83();">3
     <input type="radio" name="flight8option" onclick="flight84();">4
+    <input type="radio" name="flight8option" onclick="flight8b();">Both
   	<input type="radio" name="flight8option" onclick="flight8ilt();">ILT
    <div id="flight8colorkey"></div>
    </fieldset>
@@ -357,6 +364,12 @@
       color(fb14[i],'#D3D3D3');
     }
   }
+  function flight1b(){
+    for(i=0;i<fb13.length;i++){
+      color(fb13[i],'#1eff4b');
+      color('th3','#1eff4b')
+    }
+  }
   //
   function flight23(){
     for(i=0;i<fb23.length;i++){
@@ -376,6 +389,12 @@
     }
     for(i=0;i<fb24.length;i++){
       color(fb24[i],'#D3D3D3');
+    }
+  }
+  function flight2b(){
+    for(i=0;i<fb23.length;i++){
+      color(fb23[i],'#fffa00');
+      color('w3','#fffa00')
     }
   }
   //
@@ -399,6 +418,12 @@
       color(fb34[i],'#D3D3D3');
     }
   }
+  function flight3b(){
+    for(i=0;i<fb33.length;i++){
+      color(fb33[i],'#0048bc');
+      color('f4','#0048bc');
+    }
+  }
   //
   function flight43(){
     for(i=0;i<fb43.length;i++){
@@ -420,6 +445,12 @@
       color(fb44[i],'#D3D3D3');
     }
   }
+  function flight4b(){
+    for(i=0;i<fb43.length;i++){
+      color(fb43[i],'#87edff');
+      color('w6','#87edff');
+    }
+  }
   //
   function flight53(){
     for(i=0;i<fb53.length;i++){
@@ -439,6 +470,12 @@
     }
     for(i=0;i<fb54.length;i++){
       color(fb54[i],'#D3D3D3');
+    }
+  }
+  function flight5b(){
+    for(i=0;i<fb53.length;i++){
+      color(fb53[i],'#f78c2e');
+      color('t8','#f78c2e');
     }
   }
   //
@@ -481,6 +518,12 @@
       color(fb74[i],'#D3D3D3');
     }
   }
+  function flight7b(){
+    for(i=0;i<fb73.length;i++){
+      color(fb73[i],'#bdff7c');
+      color('m12','#bdff7c');
+    }
+  }
   //
   function flight83(){
     for(i=0;i<fb83.length;i++){
@@ -500,6 +543,12 @@
     }
     for(i=0;i<fb84.length;i++){
       color(fb84[i],'#D3D3D3');
+    }
+  }
+  function flight8b(){
+    for(i=0;i<fb84.length;i++){
+      color(fb84[i],'#d5b3e0');
+      color('m13','#d5b3e0');
     }
   }
   //
